@@ -316,6 +316,17 @@
 </div>
 <!-- products_wrapper -->
 
+<div class="globe_wrapper">
+    <!-- <div class="container"> -->
+        <div class="inner_container" id="globeWrapper" style="height: 600px;">
+            
+            <div id="globeViz"></div>
+
+        </div>
+    <!-- </div> -->
+</div>
+<!-- globe_wrapper -->
+
 <div class="global_partners">
     <div class="contain_90">
         <div class="inner_container">
@@ -521,6 +532,105 @@ $('#ticker_1').eocjsNewsticker({
 // });
 
 </script>
+
+
+<!-- <script src="https://cdn.jsdelivr.net/npm/three@0.156.1/build/three.min.js"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/globe.gl"></script>
+<script>
+  const markerSvg = `<svg viewBox="-4 0 36 36">
+    <path fill="currentColor" d="M14,0 C21.732,0 28,5.641 28,12.6 C28,23.963 14,36 14,36 C14,36 0,24.064 0,12.6 C0,5.641 6.268,0 14,0 Z"></path>
+    <circle fill="black" cx="14" cy="14" r="7"></circle>
+  </svg>`;
+
+const locations = [
+  { name: "USA", lat: 39.87373745247826, lng: -75.25820590309513 },
+  { name: "Canada", lat: 43.778790310691974, lng: -79.68831025306625 },
+  { name: "Portugal", lat: 41.226485173561855, lng: -8.591105838207271 },
+  { name: "South Africa", lat: -26.243980685460574, lng: 28.099369077194503 },
+  { name: "Tanzania", lat: -6.852559602776278, lng: 39.234460872505764 },
+  { name: "Kenya", lat: -1.2659919895230127, lng: 36.80576273613211 },
+  { name: "Saudi Arabia", lat: 26.30967704114196, lng: 50.22305475022549 },
+  { name: "UAE", lat: 25.462482742699173, lng: 55.48346533845968 },
+  { name: "Oman", lat: 23.592619918152025, lng: 58.54489131035948 },
+  { name: "India", lat: 18.98767292515343, lng: 72.82357084853956 },
+  { name: "Sri Lanka", lat: 6.788288907063238, lng: 79.88340029732973 },
+  { name: "Nepal", lat: 27.02824920662079, lng: 84.8872580654831 },
+  { name: "Bangladesh", lat: 23.792429899130628, lng: 90.40458364145947 },
+  { name: "Thailand", lat: 13.75884272676935, lng: 100.55623343292771 },
+  { name: "Singapore", lat: 1.3364234309272947, lng: 103.88721164770328 },
+  { name: "Indonesia", lat: -6.300647214336566, lng: 107.15922987271689 }
+];
+
+  // const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+  // renderer.setClearColor(0x000000, 0); // transparent bg
+
+const container = document.getElementById("globeWrapper");
+
+  // fetch('includes/custom.geojson').then(res => res.json()).then(places => {
+  const world = new Globe(document.getElementById('globeViz'))
+    .globeImageUrl('https://cdn.jsdelivr.net/npm/three-globe/example/img/earth-day.jpg')
+    // .backgroundImageUrl(null);
+    // .backgroundImageUrl('images/bg/globe.png');
+    // .backgroundImageUrl('images/bg/water.jpg');
+    // .backgroundImageUrl('//cdn.jsdelivr.net/npm/three-globe/example/img/night-sky.png');
+    .backgroundImageUrl('images/bg/night-sky.png');
+    // .backgroundImageUrl('images/bg/transparent.png');
+
+  // --- 🔵 Add custom markers ---
+  world
+    .htmlElementsData(locations)
+    .htmlLat(d => d.lat)
+    .htmlLng(d => d.lng)
+    .htmlAltitude(0.02)
+    .htmlElement(d => {
+      const el = document.createElement('div');
+      // el.innerHTML = `
+      //   <svg width="24" height="24" viewBox="0 0 24 24" fill="#00c684">
+      //     <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
+      //   </svg>
+      // `;
+      el.innerHTML = `
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="#fff">
+          <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
+        </svg>
+      `;
+      el.style.transform = "translate(-50%, -100%)";
+      el.style.pointerEvents = "auto"; // ensure clickable later
+      return el;
+    });
+
+  // --- 🏷 Add label for each marker ---
+  world
+    .labelsData(locations)
+    .labelLat(d => d.lat)
+    .labelLng(d => d.lng)
+    .labelText(d => d.name)
+    .labelColor(() => '#fff')
+    .labelSize(2)
+    .labelResolution(2);
+
+  // --- 🔁 Auto-rotation ---
+  world.controls().autoRotate = true;
+  world.controls().autoRotateSpeed = -1;
+
+    // Set globe size based on container size
+    world.width(container.clientWidth);
+    world.height(container.clientHeight);
+// });
+    
+    function resizeGlobe() {
+  const container = document.getElementById("globeWrapper");
+  world.width(container.clientWidth);
+  world.height(container.clientHeight);
+  world.controls().enableZoom = false;
+}
+
+window.addEventListener("resize", resizeGlobe);
+resizeGlobe(); // run once at start
+
+</script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"version":"2024.11.0","token":"973bcfacb1dd4f2a94859471829a4dec","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+
 
 </body>
 </html>

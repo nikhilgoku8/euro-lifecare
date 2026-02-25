@@ -336,17 +336,6 @@
 </div>
 <!-- products_wrapper -->
 
-<div class="globe_wrapper">
-    <!-- <div class="container"> -->
-        <div class="inner_container" id="globeWrapper" style="height: 600px;">
-            
-            <div id="globeViz"></div>
-
-        </div>
-    <!-- </div> -->
-</div>
-<!-- globe_wrapper -->
-
 <div class="global_partners">
     <div class="contain_90">
         <div class="inner_container">
@@ -381,6 +370,18 @@
         </div>
     </div>
 </div>
+<!-- global_partners -->
+
+<div class="globe_wrapper">
+    <!-- <div class="container"> -->
+        <div class="inner_container" id="globeWrapper" style="height: 600px;">
+            
+            <div id="globeViz"></div>
+
+        </div>
+    <!-- </div> -->
+</div>
+<!-- globe_wrapper -->
 
 </div>
 <!-- main -->
@@ -426,7 +427,7 @@
                         </li>
                     </ul>
                 </div>
-                <<!-- div class="info_box">
+                <!-- <div class="info_box">
                     <div class="our_dept">
                         <div class="title">Our Products</div>
                         <ul>

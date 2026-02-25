@@ -149,10 +149,20 @@ header .logo a{
 header nav {
 	display: inline-block;
 	float: right;
-	padding: 0% 0% 0% 0%;
+	padding: 0;
 	background-color: transparent;
 	/*margin-top: 5px;*/
 	width: unset;
+	margin: 0 calc((100% - 652.73px - 142.52px - 150px) / 2);
+	transition: all 0.3s;
+}
+header.smaller nav {
+	/*display: inline-block;
+	float: left;
+	padding:0% 0% 0% 7%;
+	margin-top: 1.5%;*/
+	/*padding: 0 15px;*/
+	margin: 0 1px;
 }
 header.smaller {
 	top:0;
@@ -162,17 +172,11 @@ header.smaller {
 	-ms-transition: all 0.3s;
 	-o-transition: all 0.3s;
 	transition: all 0.3s;
-	background:#fff;
-	padding: 0%;
+	background: #ffffff00;
+	padding: 5px 0;
 }
 header.smaller .logo {
-	width:14%;
-}
-header.smaller nav {
-	display: inline-block;
-	float: left;
-	padding:0% 0% 0% 7%;
-	margin-top: 1.5%;
+	/*width:14%;*/
 }
 
 
@@ -210,20 +214,49 @@ header .top_bar .inner_container .right_pane span{
 	font-weight: 700;
 	margin: 0 0 0 50px;
 }
-header .lower_bar .inner_container{
+header.smaller .lower_bar .contain_90{
 	display: flex;
 	align-items: center;
+	justify-content: center;
+}
+header .lower_bar .inner_container{
+	display: inline-flex;
+	align-items: center;
 	justify-content: space-between;
+	justify-content: center;
+	width: 100%;
 	/*padding: 15px 0;*/
 }
 header.smaller .lower_bar .inner_container{
-	justify-content: center;
+	/*justify-content: center;*/
+	display: inline-flex;
+	background: #ffffff00;
+	width: unset;
+	min-width: 947.25px;
+	padding: 10px 15px;
+    border-radius: 100px;
+    position: relative;
+}
+header.smaller .lower_bar .inner_container::before{
+	position: absolute;
+	content: '';
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: inherit;
+	background-color: rgba(255, 255, 255, 0.5);
+	backdrop-filter: blur(8px);
+	z-index: -1;
 }
 header ul.ace-responsive-menu{
 	border: 1px solid #ddd;
 	border-radius: 100px;
 	/*background: var(--rainbow-gradient);*/
 	position: relative;
+}
+header.smaller ul.ace-responsive-menu{
+	border-color: #ffffff00;
 }
 header ul.ace-responsive-menu::before{
 	position: absolute;
@@ -232,9 +265,13 @@ header ul.ace-responsive-menu::before{
 	top: 0;
 	width: 100%;
 	height: 100%;
-	background: var(--rainbow-gradient) ;
+	/*background: var(--rainbow-gradient);*/
+	background: #bbb;
 	opacity: 0.5;
 	border-radius: inherit;
+}
+header.smaller ul.ace-responsive-menu::before{
+	opacity: 0;
 }
 header .ace-responsive-menu > li{
 	/*margin: 0 10px;*/

@@ -4,7 +4,7 @@
   
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
-<title>Html Framework</title>
+<title>Euro Lifecare</title>
 <meta name="description" content="," />
 <meta name="keywords" content="" />
 
@@ -41,7 +41,7 @@
 
 <header>  
 
-<div class="top_bar">
+<!-- <div class="top_bar">
     <div class="contain_90">
         <div class="inner_container">
             
@@ -64,7 +64,7 @@
 
         </div>
     </div>
-</div>
+</div> -->
 
 <div class="lower_bar">
     <div class="contain_90">
@@ -75,7 +75,7 @@
             <nav>
                 <!-- Menu Toggle btn-->
                 <div class="menu-toggle">
-                    <h3>Menu</h3>
+                    <!-- <h3>Menu</h3> -->
                     <button type="button" id="menu-btn">
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
@@ -91,13 +91,8 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#">
-                            <span class="title">About Us</span>
-                        </a>
-                    </li>
-                    <li>
                         <a>
-                            <span class="title">Products</span>
+                            <span class="title">Therapeutic Areas</span>
                             <span class="arrow"></span> 
                         </a>
                         <ul>
@@ -108,15 +103,40 @@
                         </ul>
                     </li>
                     <li>
+                        <a>
+                            <span class="title">Company</span>
+                            <span class="arrow"></span> 
+                        </a>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Contacts</a></li>
+                        </ul>
+                    </li>
+                    <li>
                         <a href="#">
-                            <span class="title">Partners</span>
+                            <span class="title">Pharmacovigilance</span>
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <span class="title">Contacts</span>
+                            <span class="title">News</span>
                         </a>
                     </li>
+                    <!-- <li>
+                        <a href="#">
+                            <span class="title">About Us</span>
+                        </a>
+                    </li> -->
+                    <!-- <li>
+                        <a href="#">
+                            <span class="title">Partners</span>
+                        </a>
+                    </li> -->
+                    <!-- <li>
+                        <a href="#">
+                            <span class="title">Contacts</span>
+                        </a>
+                    </li> -->
                 </ul>
             </nav>
             <div class="c2z_btn">
@@ -249,7 +269,7 @@
 </div>
 <!-- about_us -->
 
-<div class="ticker_wrapper">
+<!-- <div class="ticker_wrapper">
     <div id="ticker_1">
         <span>Gastroenterology </span>
         <span>Pediatrics </span>
@@ -261,7 +281,7 @@
         <span>Quality-Assured Pharmaceuticals </span>
         <span>Innovative Healthcare Solutions</span>
     </div>
-</div>
+</div> -->
 <!-- ticker_wrapper -->
 
 <div class="products_wrapper">
@@ -379,15 +399,15 @@
                     <div class="company_info">
                         Our team of highly skilled medical professionals is committed to delivering compassionate and expert care across various specialties.
                     </div>
-                    <div class="c2a_btn">
+                    <!-- <div class="c2a_btn">
                         <a href="#" class="lt_blue_btn dk_blue_font_hover">Make an Appointment</a>
-                    </div>
+                    </div> -->
                 </div>
                 <div class="info_box">
                     <div class="title">Contact Us</div>
-                    <div class="address">We are Here: Barakat Business Center,<br> 2 Afrosiyob, Tashkent, 100031</div>
+                    <!-- <div class="address">We are Here: Barakat Business Center,<br> 2 Afrosiyob, Tashkent, 100031</div> -->
                     <div class="email_txt">Send Mail: <a href="#">example@test.com</a> </div>
-                    <div class="contact_txt">Call Us:  <a href="#">+1 800 432 45 34</a> </div>
+                    <!-- <div class="contact_txt">Call Us:  <a href="#">+1 800 432 45 34</a> </div> -->
                     <ul class="social_links">
                         <li>
                             <a href="#">
@@ -406,7 +426,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="info_box">
+                <<!-- div class="info_box">
                     <div class="our_dept">
                         <div class="title">Our Products</div>
                         <ul>
@@ -416,7 +436,7 @@
                             <li><a href="#">OTC</a></li>
                         </ul>
                     </div>
-                </div>
+                </div> -->
 
             </div>
         </div>
@@ -436,7 +456,7 @@
 </footer>
 
 <!--sticky header-->
-<!-- <script src="js/classie.js"></script>
+<script src="js/classie.js"></script>
 <script>
 function init() {
 window.addEventListener('scroll', function(e){
@@ -453,7 +473,7 @@ window.addEventListener('scroll', function(e){
 });
 }
 window.onload = init();
-</script> -->
+</script>
 <script src="js/common.js"></script>
 <script src="js/jquery.easing.1.3.js"></script>
 

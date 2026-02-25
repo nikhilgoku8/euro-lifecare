@@ -13,7 +13,7 @@
 @media only screen and (max-width: 1280px) {
 header{
 	/*padding:1%;*/
-	}
+}
 
 
 }
@@ -36,7 +36,7 @@ header{
 	  width:100%;
 	  padding:0;
 	  margin:0 auto;
-	  padding-top:56px;
+	  /*padding-top:56px;*/
 	}
 header nav{
     width: 70%;
@@ -51,7 +51,7 @@ header nav{
 /* Styles */
 #main {
     margin:0 auto;
-    padding:56px 0 0;
+    /*padding:56px 0 0;*/
     width:100%;
 }
 header {
@@ -190,7 +190,7 @@ header.smaller .logo {
 }
 
 #main {
-    padding-top: 54px!important;
+    /*padding-top: 54px!important;*/
 }
 .ace-responsive-menu > li > a {
     padding: 5px 0 0 12px!important;

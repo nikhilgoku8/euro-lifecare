@@ -358,17 +358,40 @@ header .ace-responsive-menu > li ul.sub-menu{
 	position: relative;
 	--size: 120px;
 	padding: 0 0 0 100px;
+	transition: all 1s;
+	opacity: 0;
+	transform: translateX(50px);
+}
+.hero .swiper-slide-active .item_box .banner_overlay_box .text_box{
+	opacity: 1;
+	transform: translateX(0px);
+}
+.hero .item_box .banner_overlay_box.animate .text_box{
+	opacity: 1;
+	transform: translateX(0px);
 }
 .hero .item_box .banner_overlay_box .text_box::before{
 	position: absolute;
 	content: '';
-	left: 0;
+	/*left: 0;*/
+	left: var(--size);
 	top: calc(50% - (var(--size) / 2));
-	width: var(--size);
+	/*width: var(--size);*/
+	width: 0;
 	height: var(--size);
 	background: url(../images/icons/plus.webp) no-repeat;
 	background-position: center;
 	background-size: contain;
+	transition: all 0.5s;
+	transition-delay: 0.3s;
+}
+.hero .swiper-slide-active .item_box .banner_overlay_box .text_box::before{
+	left: 0;
+	width: var(--size);
+}
+.hero .item_box .banner_overlay_box.animate .text_box::before{
+	left: 0;
+	width: var(--size);
 }
 .hero .item_box .banner_overlay_box .text_box .sub_head{
 	font-size: 14px;
@@ -401,6 +424,37 @@ header .ace-responsive-menu > li ul.sub-menu{
 .owl-carousel.owl-theme .owl-nav [class*=owl-].owl-prev{
 	margin: 0 10px 0 0;
 }
+
+
+.nav_wrapper{
+	display: flex;
+	margin: 0;
+	position: absolute;
+	right: 5vw;
+	bottom: 5vw;
+}
+.nav_wrapper [class*=swiper-button]{
+	margin: 0;
+	width: 50px;
+	height: 50px;
+	background: #fff;
+	border-radius: 100px;
+	font-size: 20px;
+	color: var(--dk-blue);
+	opacity: 0.5;
+	transition: all 0.3s;
+	position: static;
+}
+.nav_wrapper [class*=swiper-button]:hover{
+	opacity: 1;
+}
+.nav_wrapper [class*=swiper-button].swiper-button-prev {
+    margin: 0 10px 0 0;
+}
+.nav_wrapper [class*=swiper-button] svg{
+	display: none;
+}
+
 /*info_band*/
 .info_band{
 	background: #d8edf0;
@@ -656,4 +710,13 @@ footer .lower_sec .inner_container{
 }
 footer .lower_sec .inner_container .right_pane a{
 	color: #fff;
+}
+footer .upper_sec .office_boxes .office_box{
+	padding: 0 0 15px;
+}
+footer .upper_sec .office_boxes .office_box{
+	font-size: 14px;
+}
+footer .upper_sec .office_boxes .office_box .office_country{
+	font-size: 16px;
 }

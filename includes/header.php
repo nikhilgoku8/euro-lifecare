@@ -74,6 +74,7 @@
             <div class="logo">
                 <a href="./"><img src="images/logo-reverse.png" alt="" /></a>
             </div>
+            <div class="spacer"></div>
             <nav>
                 <!-- Menu Toggle btn-->
                 <div class="menu-toggle">
@@ -141,6 +142,7 @@
                     </li> -->
                 </ul>
             </nav>
+            <div class="spacer"></div>
             <div class="c2z_btn">
                 <a href="#" class="lt_blue_btn">Book Online</a>
             </div>

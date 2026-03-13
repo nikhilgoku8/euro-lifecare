@@ -218,12 +218,12 @@
             
             <div class="upper_sec">
                 <div class="left_pane">
-                    <div class="sub_heading">OUR SPECIALITIES</div>
+                    <div class="sub_heading yellow">OUR SPECIALITIES</div>
                     <div class="heading white">Advanced Therapeutic Solutions<br> for Better Health</div>
                 </div>
                 <div class="right_pane">
                     <div class="c2a_btn">
-                        <a href="#" class="lt_blue_btn dk_blue_font_hover">View All</a>
+                        <a href="#" class="dk_blue_btn">View All</a>
                     </div>
                 </div>
             </div>

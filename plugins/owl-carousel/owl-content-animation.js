@@ -81,7 +81,7 @@ $(document).ready(function() {
         loop: true,
         autoplay: true,
         dots: false,
-        margin: 50,
+        margin: 30,
         responsive: {
           0: {
             items: 2

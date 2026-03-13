@@ -745,7 +745,7 @@ footer .upper_sec .office_boxes .office_box .office_country{
 }
 .global_partners{
 	/*background: var(--rainbow-gradient);*/
-	background: url(../images/bg/glow.png) no-repeat;
+	background: url(../images/bg/map.png) no-repeat;
 	background-size: cover;
 	background-position: center;
 	padding: 5vw 0;

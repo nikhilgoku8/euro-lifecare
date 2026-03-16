@@ -21,114 +21,54 @@
                         <a href="#" class="lt_blue_btn dk_blue_font_hover">Make an Appointment</a>
                     </div> -->
                 </div>
-                <div class="company_boxes">
-
-                    <div class="company_box">
-                        <div class="title_box">
-                            <div class="img_box">
-                                <img src="images/countries/uzbekistan.png">
-                            </div>
-                            <div class="txt_box">
-                                <div class="country_name">Uzbekistan</div>
-                                <div class="city_name">Tashkent</div>
-                            </div>
+                <div class="info_box">
+                    <div class="title">Contact Us</div>
+                    <div class="office_boxes">
+                        <div class="office_box">
+                            <div class="office_country">Uzbekistan</div>
+                            <div class="office_address">Barakat Business Center, 2 Afrosiyob, Tashkent, 100031</div>
+                            <div class="office_address">42A Abdulla Qahhor Street, Tashkent 100025, Uzbekistan</div>
+                            <div class="office_number">+998 78 150 15 10 / +998 94 777 40 03</div>
                         </div>
-                        <div class="ctc_boxes">
-                            <div class="ctc_box">
-                                <div class="icon_box"><i class="fa-solid fa-location-dot"></i></div>
-                                <div class="txt_box">
-                                    Barakat Business Center, 2 Afrosiyob, Tashkent, 100031 <br> 
-                                    42A Abdulla Qahhor Street, Tashkent 100025, Uzbekistan
-                                </div>
-                            </div>
-                            <div class="ctc_box">
-                                <div class="icon_box"><i class="fa-solid fa-phone"></i></div>
-                                <div class="txt_box">
-                                    <a href="#">+998 78 150 15 10</a> <br>
-                                    <a href="#">+998 94 777 40 03</a>
-                                </div>
-                            </div>
-                            <div class="ctc_box">
-                                <div class="icon_box"><i class="fa-solid fa-envelope"></i></div>
-                                <div class="txt_box">
-                                    <a href="#">info@eurolifecare.uz</a>
-                                </div>
-                            </div>
+                        <div class="office_box">
+                            <div class="office_country">UK</div>
+                            <div class="office_address">240 MERTON ROAD LONDON ENGLAND SW19 1EQ</div>
+                            <div class="office_number">+44 20 7439 3400</div>
                         </div>
-                        <div class="view_map">
-                            <a href="#">
-                                <div class="icon_box"><i class="fa-solid fa-location-dot"></i></div>
-                                <div class="txt_box">View on map</div>
-                            </a>
+                        <div class="office_box">
+                            <div class="office_country">Ukraine</div>
+                            <div class="office_address">проспект Академіка Глушкова, 42Б, Київ, Украина, 03187</div>
+                            <div class="office_number">+380 44 526 6486</div>
                         </div>
+                        <!-- <div class="office_box">
+                            <div class="office_country">India</div>
+                            <div class="office_address">Lorem Ipsum</div>
+                            <div class="office_number">+91 0000000000</div>
+                        </div> -->
                     </div>
-                    <div class="company_box">
-                        <div class="title_box">
-                            <div class="img_box">
-                                <img src="images/countries/uk.png">
-                            </div>
-                            <div class="txt_box">
-                                <div class="country_name">UK</div>
-                                <div class="city_name">London</div>
-                            </div>
-                        </div>
-                        <div class="ctc_boxes">
-                            <div class="ctc_box">
-                                <div class="icon_box"><i class="fa-solid fa-location-dot"></i></div>
-                                <div class="txt_box">240 MERTON ROAD LONDON ENGLAND SW19 1EQ</div>
-                            </div>
-                            <div class="ctc_box">
-                                <div class="icon_box"><i class="fa-solid fa-phone"></i></div>
-                                <div class="txt_box">
-                                    <a href="#">+44 20 7439 3400</a>
-                                </div>
-                            </div>
-                            <div class="ctc_box">
-                                <div class="icon_box"><i class="fa-solid fa-envelope"></i></div>
-                                <div class="txt_box">
-                                    <a href="#">info@eurolifecare.uk</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="view_map">
+                </div>
+                <div class="info_box">
+                    <div class="title">Contact Us</div>
+                    <!-- <div class="address">We are Here: Barakat Business Center,<br> 2 Afrosiyob, Tashkent, 100031</div> -->
+                    <div class="email_txt">Send Mail: <a href="#">info@eurolifecare.uz</a> </div>
+                    <!-- <div class="contact_txt">Call Us:  <a href="#">+1 800 432 45 34</a> </div> -->
+                    <ul class="social_links">
+                        <li>
                             <a href="#">
-                                <div class="icon_box"><i class="fa-solid fa-location-dot"></i></div>
-                                <div class="txt_box">View on map</div>
+                                <i class="fa-brands fa-facebook-f"></i>
                             </a>
-                        </div>
-                    </div>
-                    <div class="company_box">
-                        <div class="title_box">
-                            <div class="img_box">
-                                <img src="images/countries/ukraine.png">
-                            </div>
-                            <div class="txt_box">
-                                <div class="country_name">Ukraine</div>
-                                <div class="city_name">Kyiv</div>
-                            </div>
-                        </div>
-                        <div class="ctc_boxes">
-                            <div class="ctc_box">
-                                <div class="icon_box"><i class="fa-solid fa-location-dot"></i></div>
-                                <div class="txt_box">проспект Академіка Глушкова, 42Б, Київ, Украина, 03187</div>
-                            </div>
-                            <div class="ctc_box">
-                                <div class="icon_box"><i class="fa-solid fa-phone"></i></div>
-                                <div class="txt_box">+380 44 526 6486</div>
-                            </div>
-                            <div class="ctc_box">
-                                <div class="icon_box"><i class="fa-solid fa-envelope"></i></div>
-                                <div class="txt_box">info@eurolifecare.ua</div>
-                            </div>
-                        </div>
-                        <div class="view_map">
+                        </li>
+                        <li>
                             <a href="#">
-                                <div class="icon_box"><i class="fa-solid fa-location-dot"></i></div>
-                                <div class="txt_box">View on map</div>
+                                <i class="fa-brands fa-linkedin-in"></i>
                             </a>
-                        </div>
-                    </div>
-
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
                 <!-- <div class="info_box">
                     <div class="our_dept">

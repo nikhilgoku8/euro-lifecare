@@ -218,8 +218,8 @@
             
             <div class="upper_sec">
                 <div class="left_pane">
-                    <div class="sub_heading yellow">OUR SPECIALITIES</div>
-                    <div class="heading white">Advanced Therapeutic Solutions<br> for Better Health</div>
+                    <div class="sub_heading blue">OUR SPECIALITIES</div>
+                    <div class="heading violet">Advanced Therapeutic Solutions<br> for Better Health</div>
                 </div>
                 <div class="right_pane">
                     <div class="c2a_btn">
@@ -229,28 +229,28 @@
             </div>
             <!-- upper_sec -->
             <div class="product_boxes">
-                <div class="product_box">
+                <div class="product_box glass-card">
                     <div class="icon_box">
                         <img src="images/icons/gastroenterology.png">
                     </div>
                     <div class="product_name">Gastroenterology</div>
                     <!-- <div class="doctors_count">5 Doctors</div> -->
                 </div>
-                <div class="product_box">
+                <div class="product_box glass-card">
                     <div class="icon_box">
                         <img src="images/icons/pediatrician.png">
                     </div>
                     <div class="product_name">Pediatrician</div>
                     <!-- <div class="doctors_count">5 Doctors</div> -->
                 </div>
-                <div class="product_box">
+                <div class="product_box glass-card">
                     <div class="icon_box">
                         <img src="images/icons/gynecology.png">
                     </div>
                     <div class="product_name">Gynecology</div>
                     <!-- <div class="doctors_count">5 Doctors</div> -->
                 </div>
-                <div class="product_box">
+                <div class="product_box glass-card">
                     <div class="icon_box">
                         <img src="images/icons/otc.png">
                     </div>
@@ -300,15 +300,15 @@
 </div>
 <!-- global_partners -->
 
-<div class="globe_wrapper">
-    <!-- <div class="container"> -->
+<!-- <div class="globe_wrapper">
+    <div class="container">
         <div class="inner_container" id="globeWrapper" style="height: 600px;">
             
             <div id="globeViz"></div>
 
         </div>
-    <!-- </div> -->
-</div>
+    </div>
+</div> -->
 <!-- globe_wrapper -->
 
 <?php include('includes/footer.php'); ?>

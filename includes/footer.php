@@ -26,14 +26,25 @@
                     <div class="office_boxes">
                         <div class="office_box">
                             <div class="office_country">Uzbekistan</div>
-                            <div class="office_address">Lorem ipsum cupidatat dolor cillum aute proident sint nostrud elit ut deserunt ullamco irure non ut amet ut.</div>
-                            <div class="office_number">+91 8888888888</div>
-                        </div>
-                        <div class="office_box">
-                            <div class="office_country">India</div>
                             <div class="office_address">Barakat Business Center, 2 Afrosiyob, Tashkent, 100031</div>
+                            <div class="office_address">42A Abdulla Qahhor Street, Tashkent 100025, Uzbekistan</div>
                             <div class="office_number">+998 78 150 15 10 / +998 94 777 40 03</div>
                         </div>
+                        <div class="office_box">
+                            <div class="office_country">UK</div>
+                            <div class="office_address">240 MERTON ROAD LONDON ENGLAND SW19 1EQ</div>
+                            <div class="office_number">+44 20 7439 3400</div>
+                        </div>
+                        <div class="office_box">
+                            <div class="office_country">Ukraine</div>
+                            <div class="office_address">проспект Академіка Глушкова, 42Б, Київ, Украина, 03187</div>
+                            <div class="office_number">+380 44 526 6486</div>
+                        </div>
+                        <!-- <div class="office_box">
+                            <div class="office_country">India</div>
+                            <div class="office_address">Lorem Ipsum</div>
+                            <div class="office_number">+91 0000000000</div>
+                        </div> -->
                     </div>
                 </div>
                 <div class="info_box">

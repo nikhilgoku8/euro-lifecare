@@ -31,8 +31,8 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
 
 
-<link href="css/style.css" rel="stylesheet" type="text/css" />
-<link href="css/responsive.css" rel="stylesheet" type="text/css" />
+<link href="css/style.css?version=<?php echo date('Ymdhis'); ?>" rel="stylesheet" type="text/css" />
+<link href="css/responsive.css?version=<?php echo date('Ymdhis'); ?>" rel="stylesheet" type="text/css" />
 
 <!-- <script src="js/jquery.3.7.1.min.js"></script> -->
 <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>

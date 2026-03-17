@@ -17,6 +17,23 @@
                     <div class="company_info">
                         Our team of highly skilled medical professionals is committed to delivering compassionate and expert care across various specialties.
                     </div>
+                    <ul class="social_links">
+                        <li>
+                            <a href="https://www.facebook.com/people/Child-care-uz/61576986334272/?locale=ru_RU#" target="_blank">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/company/eurolifecare/posts/?feedView=all" target="_blank">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/eurolifecare.uz/" target="_blank">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
                     <!-- <div class="c2a_btn">
                         <a href="#" class="lt_blue_btn dk_blue_font_hover">Make an Appointment</a>
                     </div> -->

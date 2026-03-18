@@ -179,8 +179,8 @@
             </div>
             <div class="col-sm-6">
                 <div class="text_box">
-                    <div class="sub_heading">OUR LEGACY</div>
-                    <div class="heading">Delivering Trusted Pharmaceutical Solutions</div>
+                    <div class="sub_heading blue">OUR LEGACY</div>
+                    <div class="heading violet">Delivering Trusted Pharmaceutical Solutions</div>
                     <div class="text">
                         <p>At Euro Lifecare Uzbekistan, we believe that quality healthcare should be accessible to everyone. Since our inception, we have served as a vital bridge between international pharmaceutical innovations and the local medical community.</p>
                         <p>Our approach combines global logistical standards with a deep understanding of the Uzbekistan market. We don't just distribute medicine; we ensure that every product—from life-saving treatments to daily supplements—meets the highest benchmarks of safety and efficacy.</p>

@@ -1,177 +1,118 @@
 <?php include('includes/header.php'); ?>
 
-<div class="product_listing_page">
 
-<div class="products_list_wrapper">
-    <div class="contain_90">
 
-        <div class="heading">Products</div>
+<div class="products_list_page">
+
+<div class="products_wrapper">
+    <div class="container">
+    
+        <!-- <div class="heading">All Products</div> -->
 
         <div class="inner_container">
+            
             <div class="left_pane">
-                <div class="filters_wrapper">
-                    <div class="title">Filters</div>
-                    @php
-                        $selectedFilters = collect(request('filters', []))->flatten()->toArray();
-                    @endphp
-                    <!-- @@if(count($products)) -->
-                        @if(!empty($filterTypes) && count($filterTypes) > 0)
-                            <form id="filterForm" method="GET" action="{{ route('category.products', $category->slug) }}">
-                                <input type="hidden" name="q" value="{{ request('q') }}">
-                                <div id="accordion">
-                                    @foreach ($filterTypes as $type)
-                                        @php
-                                            $valueCount = $type->filterValues->sum(fn($value) => $filterCounts[$value->id] ?? 0);
-                                        @endphp
-                                         @if(count($type->filterValues) > 0 && $valueCount > 0)
-                                            <h3>{{ $type->title }}</h3>
-                                            <div>
-                                                <ul>
-                                                    @foreach ($type->filterValues as $value)
-                                                        @if(!empty($filterCounts[$value->id]))
-                                                            <li>
-                                                                <label>
-                                                                    <input type="checkbox" name="filters[{{$loop->parent->iteration}}][]" value="{{ $value->id }}" {{ in_array($value->id, $selectedFilters) ? 'checked' : '' }}>
-                                                                    <span class="text">{{ $value->value }}</span>
-                                                                    <span class="count">{{ $filterCounts[$value->id] ?? 0 }}</span>
-                                                                </label>
-                                                            </li>
-                                                        @endif
-                                                    @endforeach
-                                                </ul>
-                                            </div>
-                                        @endif
-                                    @endforeach
-                                </div>
-                                <br>
-                                <!-- <button class="red_hollow_btn">Apply Filters</button> -->
-                            </form>
-                            <script>
-                                $(document).on('change', '#filterForm input[type="checkbox"]', function() {
-                                    $('#filterForm').submit();
-                                });
-                            </script>
-                        @endif
-                    <!-- @@endif -->
+                <div class="categories_wrapper">
+                    <div class="title">Categories</div>
+                    <ul>
+                        <li><a href="#">All</a></li>
+                        <li><a href="#">Pain Management</a></li>
+                        <li><a href="#">Anti-infectives</a></li>
+                        <li><a href="#">Nutritional Supplements</a></li>
+                        <li><a href="#">Anti-Allergic</a></li>
+                        <li><a href="#">Anti-Fungal</a></li>
+                        <li><a href="#">Cough Management</a></li>
+                        <li><a href="#">Gastrointestinals</a></li>
+                        <li><a href="#">Anti-aging</a></li>
+                        <li><a href="#">Anti-psoriasis</a></li>
+                        <li><a href="#">Probiotics</a></li>
+                        <li><a href="#">Moisturizers</a></li>
+                        <li><a href="#">Hair-regrowth</a></li>
+                        <li><a href="#">Immunity Booster</a></li>
+                    </ul>
                 </div>
-            <div>
+            </div>
             <div class="right_pane">
-                <div class="selected_filters_wrapper">
-                    @if(request()->has('filters') && count(request('filters')) > 0)
-                        <div class="selected_filters">
-
-                            <button type="button" class="clear_filters"><span class="cross_icon"></span> <span class="txt">Clear Filters</span></button>
-
-                            @foreach ($filterTypes as $type)
-                                @foreach ($type->filterValues as $value)
-                                    @if(in_array($value->id, $selectedFilters))
-                                    <button class="remove_filter" data-id="{{ $value->id }}">
-                                        <span class="cross_icon"></span>
-                                        <span class="filter_value">{{ $value->value }}</span>
-                                    </button>
-                                    @endif
-                                @endforeach
-                            @endforeach
-                        </div>
-                        <script>
-                            $(document).on('click', '.remove_filter', function(e) {
-                                e.preventDefault();
-                                let filterId = $(this).data('id');
-
-                                // Uncheck the checkbox for this filter
-                                $("input[type=checkbox][value='" + filterId + "']").prop('checked', false);
-
-                                // Submit the form automatically
-                                $('#filterForm').submit();
-                            });
-
-                            // Clear all filters
-                            $(document).on('click', '.clear_filters', function() {
-                                $('#filterForm input[type=checkbox]').prop('checked', false);
-                                $('#filterForm').submit();
-                            });
-                        </script>
-                    @endif
+                <div class="header_wrapper">
+                    <div class="heading">Category Title</div>
+                    <div class="total_count_text">
+                        Showing 1 to 10 of 100 results
+                    </div>
                 </div>
-                <div class="list_heading">
+                <!-- <div class="list_heading">
                     <div class="breadcrumbs">
                         <ul>
                             <li><a class="txt" href="{{ route('electrical') }}">Home</a></li>
-                            <li><span class="txt">{{ $category->title }}</span></li>
+                            <li><span class="txt">categoryTitle</span></li>
                         </ul>
                     </div>
                     <div class="total_count_text">
-                        @if ($products->total() > 0)
-                            Showing {{ $products->firstItem() }} to {{ $products->lastItem() }} of {{ $products->total() }} results
-                        @endif
+                        Showing 1 to 10 of 100 results
                     </div>
-                    @if(!$desktop)
-                    <div class="show_filter_btn_wrapper">
-                        <button type="button" class="show_filter_btn">
-                            <span class="three_lines">
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                            </span>
-                            <span class="text">Show Sidebar</span>
-                        </button>
-                    </div>
-                    @endif
-                </div>
-                @if(count($products))
-                    <div class="products_list">
-                        @foreach($products as $product)
-                            <div class="product_box">
-                                <a href="{{ route('product', [
-                                        'category' => $category->slug,
-                                        'subCategory' => $product->subCategory->slug,
-                                        'product' => $product->slug
-                                    ]) }}" class="img_box">
-                                    <img src="{{ $product->productImages?->first()->image_file ?? asset('electrical-assets/images/coming-soon.webp') }}">
-                                </a>
-                                <div class="text_box">
-                                    <a href="{{ route('product', [
-                                        'category' => $category->slug,
-                                        'subCategory' => $product->subCategory->slug,
-                                        'product' => $product->slug
-                                    ]) }}" class="product_title">{{ $product->title }}</a>
-                                    <div class="sub_category_title">{{ $product->subCategory->title }}</div>
-                                    <div class="description">{{ $product->description }}</div>
-                                    <!-- <button class="red_filled_btn">Add To Enquiry</button> -->
-                                    <div class="add_to_cart_inputs">
-                                        <div class="number_input">
-                                            <button onclick="this.parentNode.querySelector('input').stepDown()">-</button>
-                                            <input type="number" value="1" min="1">
-                                            <button onclick="this.parentNode.querySelector('input').stepUp()">+</button>
-                                        </div>
-                                        <button class="red_filled_btn add_to_cart" data-product-id="{{ $product->id }}">Add to Enquiry</button>
-                                    </div>
-                                </div>
+                </div> -->
+                <!-- @if(count($products)) -->
+                <div class="products_list">
+                    <!-- @foreach($products as $product) -->
+                    <?php for($i=1;$i<=6;$i++){ ?>
+                        <a href="product-details.php" class="product_box">
+                            <div class="img_box">
+                                <img src="images/products/<?php echo $i; ?>.webp">
                             </div>
-                        @endforeach
-                    </div>
-                    <div class="page_links">
-                        <!-- @{{ $products->onEachSide(1)->links('pagination.numbers') }} -->
-                        {{ $products->withQueryString()->links('pagination.numbers') }}
-                    </div>
-                    <!-- @{{ $products->links('pagination::bootstrap-5') }} -->
-                    <!-- @if ($products->total() > 0)
-                        Showing {{ $products->firstItem() }} to {{ $products->lastItem() }} of {{ $products->total() }} results
-                    @else
-                        No results found.
-                    @endif -->
-                @else
+                            <div class="text_box">
+                                <div class="product_title">Calcicare Advance </div>
+                                <div class="sub_category_title">Dietary Supplement / Moisturizers</div>
+                            </div>
+                        </a>
+                    <?php } ?>
+                    <!-- @endforeach -->
+                </div>
+                <div class="page_links">
+                    <!-- {{ $products->withQueryString()->links('pagination.numbers') }} -->
+                </div>
+                <!-- @else
                     <br>
                     <br>
                     <div class="title red">No results found.</div>
-                @endif
+                @endif -->
             </div>
 
         </div>
     </div>
 </div>
+<!-- products_wrapper end -->
 
 </div>
-<!-- product_listing_page -->
+<!-- products_list_page end -->
+
+<script>
+// $( function() {
+//   $( "#accordion" ).accordion({
+//     collapsible: true
+//   });
+// } );
+
+$("#accordion").accordion({
+    collapsible: true,
+    active: false,
+    heightStyle: "content"
+}).accordion("destroy"); // remove built-in behavior
+
+// Custom multiple open toggle
+$("#accordion div").hide();
+
+// Open panels that have any checked checkbox
+$("#accordion h3").each(function () {
+    if ($(this).next().find("input[type='checkbox']:checked").length > 0) {
+        $(this).next().show();        // Show the panel
+        $(this).addClass("ui-state-active"); // Optional: jQuery UI style active
+    }
+});
+    
+$("#accordion h3").click(function () {
+    $(this).toggleClass("ui-state-active");
+    $(this).next().slideToggle();
+});
+
+</script>
 
 <?php include('includes/footer.php'); ?>

@@ -105,6 +105,7 @@
                             <li><a href="#">Pediatrician</a></li>
                             <li><a href="#">Gynecology</a></li>
                             <li><a href="#">OTC</a></li>
+                            <li><a href="#">Ortho</a></li>
                         </ul>
                     </li>
                     <li>
@@ -146,7 +147,7 @@
             </nav>
             <div class="spacer"></div>
             <div class="c2z_btn">
-                <a href="#" class="lt_blue_btn">Book Online</a>
+                <a href="https://gopharm.uz/" class="lt_blue_btn">Buy</a>
             </div>
         </div>
     </div>

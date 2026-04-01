@@ -106,6 +106,12 @@
                                     <a href="#">info@eurolifecare.uk</a>
                                 </div>
                             </div>
+                            <div class="ctc_box">
+                                <div class="icon_box"><i class="fa-solid fa-globe"></i></div>
+                                <div class="txt_box">
+                                    <a href="https://eurolifecare.uk/" target="_blank">https://eurolifecare.uk/</a>
+                                </div>
+                            </div>
                         </div>
                         <div class="view_map">
                             <a href="#">
@@ -136,6 +142,12 @@
                             <div class="ctc_box">
                                 <div class="icon_box"><i class="fa-solid fa-envelope"></i></div>
                                 <div class="txt_box">info@eurolifecare.ua</div>
+                            </div>
+                            <div class="ctc_box">
+                                <div class="icon_box"><i class="fa-solid fa-globe"></i></div>
+                                <div class="txt_box">
+                                    <a href="https://eurolifecare.com.ua/" target="_blank">https://eurolifecare.com.ua/</a>
+                                </div>
                             </div>
                         </div>
                         <div class="view_map">

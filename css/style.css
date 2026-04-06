@@ -1580,8 +1580,9 @@ footer .upper_sec .company_boxes .company_box .view_map a{
 	padding: 0 0 0 20px;
 }
 .product_details_page .inner_container .product_details_wrapper .right_pane .composition ul li{
-	list-style: disc;
-	padding: 0 0 10px;
+	line-height: 1.2;
+    list-style: disc;
+    padding: 0 0 5px;
 }
 .product_details_page .inner_container .product_details_wrapper .right_pane .selective_info{
 	padding: 0;

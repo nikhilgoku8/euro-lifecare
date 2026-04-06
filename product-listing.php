@@ -15,7 +15,7 @@
                 <div class="categories_wrapper">
                     <div class="title">Categories</div>
                     <ul>
-                        <li><a href="#">All</a></li>
+                        <li class="active"><a href="#">All</a></li>
                         <li><a href="#">Pain Management</a></li>
                         <li><a href="#">Anti-infectives</a></li>
                         <li><a href="#">Nutritional Supplements</a></li>
@@ -60,7 +60,10 @@
                             </div>
                             <div class="text_box">
                                 <div class="product_title">Calcicare Advance </div>
-                                <div class="sub_category_title">Dietary Supplement / Moisturizers</div>
+                                <div class="sub_category_title">
+                                    <span class="txt">Dietary Supplement / Moisturizers</span>
+                                    <span class="plus_icon"></span>
+                                </div>
                             </div>
                         </a>
                     <?php } ?>

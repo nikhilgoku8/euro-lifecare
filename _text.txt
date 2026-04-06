@@ -1,1 +1,8 @@
 also we should add to the menu section Career and add this section also to the home page
+
+Today MOM
+-----------------------------
+1) Add Plus Icon
+2) Buy Now button on Product Details
+3) Left categories in capsul shape..  highlight with blue
+4) Add Career  Page - Job positions

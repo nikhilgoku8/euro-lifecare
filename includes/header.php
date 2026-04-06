@@ -128,6 +128,11 @@
                             <span class="title">News</span>
                         </a>
                     </li>
+                    <li>
+                        <a href="#">
+                            <span class="title">Career</span>
+                        </a>
+                    </li>
                     <!-- <li>
                         <a href="#">
                             <span class="title">About Us</span>
@@ -147,7 +152,7 @@
             </nav>
             <div class="spacer"></div>
             <div class="c2z_btn">
-                <a href="https://gopharm.uz/" class="lt_blue_btn">Buy</a>
+                <a href="https://gopharm.uz/" class="lt_blue_btn" target="_blank">Buy</a>
             </div>
         </div>
     </div>

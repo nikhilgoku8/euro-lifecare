@@ -64,6 +64,9 @@
                                 Contraindications: Individual sensitivity to components, children under 6 years of age.
                             </div>
                         </div>
+                        <div class="buy_btn">
+                            <a href="https://gopharm.uz/" class="lt_blue_btn" target="_blank">Buy Now</a>
+                        </div>
                     </div>
                 </div>
             </div>
